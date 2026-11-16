@@ -1,6 +1,4 @@
 import { useState } from 'react'
-
-// Shows an image, or a "coming soon" panel if there is none or it can't load.
 export default function Shot({ src, alt }: { src: string; alt: string }) {
   const [failed, setFailed] = useState(false)
   return (
